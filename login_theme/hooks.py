@@ -27,9 +27,10 @@ app_license = "mit"
 # include js, css files in header of desk.html
 
 # Inject custom CSS into the login page
-app_include_css = [
-    "/assets/login_theme/css/custom_login.css"
+web_include_css = [
+    "/assets/login_theme/css/login_bundle.css"
 ]
+
 # app_include_js = "/assets/login_theme/js/login_theme.js"
 
 
@@ -249,4 +250,3 @@ app_include_css = [
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-
