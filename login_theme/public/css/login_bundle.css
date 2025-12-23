@@ -1,191 +1,209 @@
 /* Ensure box-sizing is applied globally for consistent layout behavior */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* General body styling for background image */
 body {
-    font-family: 'Inter', sans-serif; /* استخدام خط Inter حسب التعليمات */
-    /* تم تغيير هذا الرابط إلى رابط صورة الخلفية الفعلي لموقع مدرستك */
-    background-image: url('/assets/login_theme/img/login_img.jpg');
-    background-size: cover; /* تغطية كاملة للخلفية */
-    background-position: center; /* توسيط الخلفية */
-    background-repeat: no-repeat; /* عدم تكرار الخلفية */
-    background-attachment: fixed; /* تثبيت الخلفية عند التمرير */
-    display: flex; /* استخدام Flexbox لتوسيط المحتوى */
-    justify-content: center; /* توسيط أفقي */
-    align-items: center; /* توسيط عمودي */
-    min-height: 100vh; /* التأكد من أن الصفحة تأخذ ارتفاع الشاشة بالكامل */
-    margin: 0; /* إزالة الهامش الافتراضي للجسم */
-    padding: 20px; /* إضافة بعض الحشوة حول المحتوى للشاشات الصغيرة */
+  font-family: "Inter", sans-serif; /* Use Inter font as specified */
+  /* Changed to actual background image URL for the site */
+  background-image: url("/assets/login_theme/img/login1.jpg");
+  background-size: cover; /* Full background coverage */
+  background-position: center; /* Center the background */
+  background-repeat: no-repeat; /* No background repetition */
+  background-attachment: fixed; /* Fix background on scroll */
+  display: flex; /* Use Flexbox to center content */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  min-height: 100vh; /* Ensure page takes full screen height */
+  margin: 0; /* Remove default body margin */
+  padding: 20px; /* Add some padding around content for small screens */
 }
 
 /* Container for login elements */
 .for-login {
-    width: 100%; /* أخذ العرض الكامل للعنصر الأب */
-    max-width: 400px; /* أقصى عرض للشاشات الكبيرة (تم تصغيره) */
-    margin: 0 auto; /* توسيط الحاوية */
+  width: 100%; /* Take full width of parent element */
+  max-width: 400px; /* Maximum width for large screens (reduced) */
+  margin: 0 auto; /* Center the container */
 }
 
 /* Heading styling */
 .for-login h4 {
-    width: 100%; /* التأكد من أن العنوان يأخذ العرض المتاح بالكامل */
-    text-align: center; /* توسيط النص */
-    margin-bottom: 20px; /* مسافة أسفل العنوان */
-    color: #191970; /* لون كحلي غامق */
-    font-weight: 900; /* جعل الخط أكثر عتامة */
-    font-size: 1.8em; /* تكبير حجم الخط قليلاً */
-    letter-spacing: 1.5px; /* إضافة تباعد بين الأحرف للتميز */
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* ظل خفيف للنص بشكل افتراضي */
-    transition: text-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* انتقال سلس لتأثير التحويم */
+  width: 100%; /* Ensure title takes full available width */
+  text-align: center; /* Center the text */
+  margin-bottom: 20px; /* Space below title */
+  color: #191970; /* Dark navy color */
+  font-weight: 900; /* Make font bolder */
+  font-size: 1.8em; /* Slightly increase font size */
+  letter-spacing: 1.5px; /* Add spacing between letters for distinction */
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3); /* Light text shadow by default */
+  transition: text-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
 
 /* Glowing effect on hover */
 .for-login h4:hover {
-    text-shadow:
-        0 0 10px #4169E1, /* إشعاع أزرق ملكي */
-        0 0 20px #4169E1,
-        0 0 30px #4169E1,
-        0 0 40px #000080; /* إشعاع كحلي أعمق */
-    transform: scale(1.05); /* تكبير طفيف عند التحويم */
+  text-shadow: 0 0 10px #4169e1, /* Royal blue glow */ 0 0 20px #4169e1,
+    0 0 30px #4169e1, 0 0 40px #000080; /* Deeper navy glow */
+  transform: scale(1.05); /* Slight scale on hover */
 }
 
 /* Page card styling */
 .for-login .page-card {
-    background-color: rgba(255, 255, 255, 0.9); /* خلفية بيضاء شبه شفافة للبطاقة */
-    border-radius: 15px; /* حواف مستديرة للبطاقة */
-    padding: 25px; /* حشوة داخل البطاقة (تم تصغيرها) */
-    box-shadow: 0px 0px 10px 1px rgba(149, 61, 61, 0.41) !important; /* الظل الأولي */
-    transition: box-shadow 0.3s ease; /* انتقال سلس لتأثير التحويم */
-    width: 100%; /* أخذ العرض الكامل للعنصر الأب */
-    max-width: 400px; /* أقصى عرض للشاشات الكبيرة (تم تصغيره) */
-    margin: 0 auto; /* توسيط البطاقة */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Semi-transparent white background for card */
+  border-radius: 15px; /* Rounded card edges */
+  padding: 25px; /* Padding inside card (reduced) */
+  box-shadow: 0px 0px 10px 1px rgba(149, 61, 61, 0.41) !important; /* Initial shadow */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  width: 100%; /* Take full width of parent element */
+  max-width: 400px; /* Maximum width for large screens (reduced) */
+  margin: 0 auto; /* Center the card */
 }
 
 .for-login .page-card:hover {
-    box-shadow: 0px 0px 10px 1px #466a47 !important; /* ظل عند التحويم */
+  box-shadow: 0px 0px 10px 1px #466a47 !important; /* Shadow on hover */
 }
 
 /* Form group styling */
 .form-group {
-    margin-bottom: 15px; /* مسافة بين مجموعات النموذج */
+  margin-bottom: 15px; /* Space between form groups */
 }
 
 /* Input field styling */
 .form-control {
-    width: 100%; /* المدخلات تأخذ العرض الكامل للعنصر الأب */
-    padding: 10px 15px; /* حشوة داخل المدخلات */
-    border: 1px solid #ddd; /* حدود رمادية فاتحة */
-    border-radius: 8px; /* حواف مستديرة للمدخلات */
-    box-shadow: 0px 0px 10px 1px rgba(149, 61, 61, 0.41) !important; /* الظل الأولي */
-    transition: box-shadow 0.3s ease; /* انتقال سلس لتأثير التحويم */
+  width: 100%; /* Inputs take full width of parent element */
+  padding: 10px 15px; /* Padding inside inputs */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded input edges */
+  box-shadow: 0px 0px 10px 1px rgba(149, 61, 61, 0.41) !important; /* Initial shadow */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .form-control:focus {
-    outline: none; /* إزالة التحديد الافتراضي عند التركيز */
-    border-color: #678fb1; /* تمييز الحدود عند التركيز */
+  outline: none; /* Remove default focus outline */
+  border-color: #678fb1; /* Highlight border on focus */
 }
 
 input:hover {
-    box-shadow: 0px 0px 10px 1px #466a47 !important; /* ظل عند التحويم للمدخلات */
+  box-shadow: 0px 0px 10px 1px #466a47 !important; /* Shadow on hover for inputs */
 }
 
 /* Login button styling */
 .for-login .page-card .btn-login {
-    width: 100%; /* الزر يأخذ العرض الكامل */
-    padding: 12px 20px; /* حشوة داخل الزر */
-    border: none; /* بدون حدود */
-    border-radius: 8px; /* حواف مستديرة */
-    cursor: pointer; /* مؤشر اليد عند التحويم */
-    font-size: 16px; /* حجم الخط */
-    font-weight: 600; /* خط عريض */
-    text-align: center; /* توسيط النص */
-    margin-top: 20px; /* مسافة أعلى الزر */
+  width: 100%; /* Button takes full width */
+  padding: 12px 20px; /* Padding inside button */
+  border: none; /* No border */
+  border-radius: 8px; /* Rounded edges */
+  cursor: pointer; /* Hand cursor on hover */
+  font-size: 16px; /* Font size */
+  font-weight: 600; /* Bold font */
+  text-align: center; /* Center text */
+  margin-top: 20px; /* Space above button */
 
-    /* تدرج وأنماط النص من CSS المستخدم */
-    background-image: linear-gradient(to right, #bdb591 0%, #f2f2f2 25%, #dbdbdb 50%, #eaeaea 100%) !important;
-    color: #dc1212;
-    text-shadow: 0px 1px 1px rgb(255, 255, 255), 0px -1px 1px rgb(0, 0, 0);
-    box-shadow: 0px 0px 10px 1px rgba(149, 61, 61, 0.41) !important;
-    background-size: 400% 100%; /* للرسوم المتحركة */
-    animation: gradientAnimation 5s ease infinite; /* الرسوم المتحركة */
-    transition: box-shadow 0.3s ease, color 0.3s ease; /* انتقالات سلسة */
+  /* Gradient and text styles from used CSS */
+  background-image: linear-gradient(
+    to right,
+    #bdb591 0%,
+    #f2f2f2 25%,
+    #dbdbdb 50%,
+    #eaeaea 100%
+  ) !important;
+  color: #dc1212;
+  text-shadow: 0px 1px 1px rgb(255, 255, 255), 0px -1px 1px rgb(0, 0, 0);
+  box-shadow: 0px 0px 10px 1px rgba(149, 61, 61, 0.41) !important;
+  background-size: 400% 100%; /* For animation */
+  animation: gradientAnimation 5s ease infinite; /* Animation */
+  transition: box-shadow 0.3s ease, color 0.3s ease; /* Smooth transitions */
 }
 
 .for-login .page-card .btn-login:hover {
-    color: #2f8338; /* لون النص عند التحويم */
-    box-shadow: 0px 0px 10px 1px #466a47 !important; /* ظل عند التحويم */
+  color: #2f8338; /* Text color on hover */
+  box-shadow: 0px 0px 10px 1px #466a47 !important; /* Shadow on hover */
 }
 
 /* Forgot password link styling */
 .forgot-password-message {
-    text-align: center; /* توسيط الرسالة */
-    margin-top: 15px; /* مسافة أعلى الرسالة */
+  text-align: center; /* Center the message */
+  margin-top: 15px; /* Space above message */
 }
 
 .forgot-password-message a {
-    color: #678fb1; /* لون الرابط */
-    text-decoration: none; /* بدون تسطير */
-    padding: 5px 10px; /* حشوة لمنطقة النقر */
-    border-radius: 5px; /* حواف مستديرة */
-    box-shadow: 0px 0px 5px 0px rgba(149, 61, 61, 0.41) !important; /* الظل الأولي */
-    transition: box-shadow 0.3s ease; /* انتقال سلس */
-    display: inline-block; /* السماح بالحشوة والظل */
+  color: #678fb1; /* Link color */
+  text-decoration: none; /* No underline */
+  padding: 5px 10px; /* Padding for click area */
+  border-radius: 5px; /* Rounded edges */
+  box-shadow: 0px 0px 5px 0px rgba(149, 61, 61, 0.41) !important; /* Initial shadow */
+  transition: box-shadow 0.3s ease; /* Smooth transition */
+  display: inline-block; /* Allow padding and shadow */
 }
 
 .forgot-password-message a:hover {
-    box-shadow: 0px 0px 5px 0px #466a47 !important; /* ظل عند التحويم */
+  box-shadow: 0px 0px 5px 0px #466a47 !important; /* Shadow on hover */
 }
 
 /* Navbar styling (if used, though not directly in login form) */
 .navbar-light {
-    background-image: linear-gradient(to right, rgba(78, 74, 51, 0.405), rgba(63, 88, 138, 0.51) 100%) !important;
-    color: #dc1212;
-    text-shadow: 0px 1px 1px rgb(255, 255, 255), 0px -1px 1px rgb(0, 0, 0);
-    box-shadow: 0px 0px 10px 1px rgba(149, 61, 61, 0.41) !important;
-    padding: 15px; /* إضافة حشوة لشريط التنقل */
-    text-align: center; /* توسيط المحتوى في شريط التنقل */
+  background-image: linear-gradient(
+    to right,
+    rgba(78, 74, 51, 0.405),
+    rgba(63, 88, 138, 0.51) 100%
+  ) !important;
+  color: #dc1212;
+  text-shadow: 0px 1px 1px rgb(255, 255, 255), 0px -1px 1px rgb(0, 0, 0);
+  box-shadow: 0px 0px 10px 1px rgba(149, 61, 61, 0.41) !important;
+  padding: 15px; /* Add padding to navigation bar */
+  text-align: center; /* Center content in navigation bar */
 }
 
 .navbar-light:hover {
-    background-image: linear-gradient(to right, #bdb591 0%, #f2f2f2 25%, #dbdbdb 50%, #eaeaea 100%) !important;
-    color: #2f8338;
-    text-shadow: 0px 1px 1px rgb(255, 255, 255), 0px -1px 1px rgb(0, 0, 0);
-    box-shadow: 0px 0px 10px 1px #466a47 !important;
+  background-image: linear-gradient(
+    to right,
+    #bdb591 0%,
+    #f2f2f2 25%,
+    #dbdbdb 50%,
+    #eaeaea 100%
+  ) !important;
+  color: #2f8338;
+  text-shadow: 0px 1px 1px rgb(255, 255, 255), 0px -1px 1px rgb(0, 0, 0);
+  box-shadow: 0px 0px 10px 1px #466a47 !important;
 }
 
 /* Image styling within page card head */
 .for-login .page-card-head img {
-    border-radius: 20px;
-    max-height: 180px;
-    height: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
-    width: auto; /* الحفاظ على نسبة العرض إلى الارتفاع */
-    display: block; /* جعلها عنصر كتلة للتوسيط */
-    margin: 0 auto 20px auto; /* توسيط أفقيًا وإضافة مسافة أسفل */
-    max-width: 100%; /* التأكد من أن الصورة لا تتجاوز حاويتها */
+  border-radius: 20px;
+  max-height: 180px;
+  height: auto; /* Maintain aspect ratio */
+  width: auto; /* Maintain aspect ratio */
+  display: block; /* Make it block element for centering */
+  margin: 0 auto 20px auto; /* Center horizontally and add space below */
+  max-width: 100%; /* Ensure image doesn't exceed container */
 }
 
 /* Keyframe animation for button gradient */
 @keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 /* Hide the web-footer element */
 .web-footer {
-    display: none !important;
+  display: none !important;
 }
 
 /* Responsive adjustments for very small screens */
 @media (max-width: 576px) {
-    body {
-        padding: 10px; /* تقليل الحشوة على الشاشات الصغيرة جدًا */
-    }
-    .for-login .page-card {
-        padding: 20px; /* تقليل حشوة البطاقة */
-    }
+  body {
+    padding: 10px; /* Reduce padding on very small screens */
+  }
+  .for-login .page-card {
+    padding: 20px; /* Reduce card padding */
+  }
 }
